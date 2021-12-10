@@ -1,4 +1,4 @@
-var palavraSecreta = "ornitorrinco";
+var palavraSecreta = "caioba";
 
 var letrasCertas = [];
 var letrasErradas = [];
