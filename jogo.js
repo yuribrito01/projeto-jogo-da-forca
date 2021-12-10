@@ -1,4 +1,4 @@
-var palavraSecreta = "c";
+var palavraSecreta = "ornitorrinco";
 
 var letrasCertas = [];
 var letrasErradas = [];
@@ -26,13 +26,13 @@ function clickarLetra(botao, letra) {
     letrasCertas.push(letra);
     montarResultado();
 
-    botao.classList.add("letraCerta");
+    botao.classList.add("class_letra_certa");
 
   } else {
     letrasErradas.push(letra);
     atualizarImagem();
 
-    botao.classList.add("letraErrada");
+    botao.classList.add("class_letra_errada");
   }
 
   botao.disabled = true;
@@ -41,43 +41,44 @@ function clickarLetra(botao, letra) {
 
 function verificaFimDeJogo() {
   if (letrasErradas.length == 6) {
-    window.location.href = "teste_resultado.html";
+    window.location.href = "perdedor.html";
   }
 
   var h1 = document.getElementById("palavra_secreta");
   if (!h1.innerText.includes("_")) {
-    window.location.href = "teste_resultado.html";
+    window.location.href = "ganhador.html";
   }
 }
 
 function atualizarImagem() {
 
+  var nomeImagem = "";
+
   switch (letrasErradas.length) {
     case 1:
-      var nomeImagem = "imagens/erro1.png";
-
-      var img = document.getElementById("img");
-      img.src = nomeImagem;
-
+      nomeImagem = "imagens/erro1.png";
       break;
     case 2:
-
+      nomeImagem = "imagens/erro2.png";
       break;
     case 3:
-
+      nomeImagem = "imagens/erro3.png";
       break;
     case 4:
-
+      nomeImagem = "imagens/erro4.png";
       break;
     case 5:
-
+      nomeImagem = "imagens/erro5.png";
       break;
     case 6:
-
+      nomeImagem = "imagens/erro6.png";
       break;
     default:
-
+      nomeImagem = "imagens/forca_sem_erro.png";
   }
+
+  var img = document.getElementById("bonequinho_caioba");
+  img.src = nomeImagem;
 }
 
 montarResultado();
