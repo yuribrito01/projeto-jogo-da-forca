@@ -30,10 +30,12 @@ h1 {
     text-align: center;
 }
 
-#class_letra_certa {
-    background-color: #62b160;
+.class_letra_certa {
+    background-color: #62b160 !important;
+    color: white;
 }
 
-#class_letra_errada {
-    background-color: #f35e5e;
+.class_letra_errada {
+    background-color: #f35e5e !important;
+    color: white;
 }
