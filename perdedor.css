@@ -43,7 +43,9 @@ h1 {
 }
 
 #patric {
+    position: relative;
     width: 150px;
     display: inline-block;
-
+    margin-left: 43%;
+    top: 20px
 }
