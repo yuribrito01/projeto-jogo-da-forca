@@ -1,4 +1,10 @@
-var palavraSecreta = "caioba";
+var queryString = window.location.search;
+var urlParams = new URLSearchParams(queryString);
+var palavraSecreta = urlParams.get('palavra');
+
+if (palavraSecreta == null) {
+  alert("Insira uma palavra imediatamente!");
+}
 
 var letrasCertas = [];
 var letrasErradas = [];
