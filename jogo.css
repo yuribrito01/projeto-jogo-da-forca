@@ -1,1 +1,39 @@
-#tamanhoimagem {}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 5%;
+    background-color: bisque;
+}
+
+#qaop {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 2.5%;
+}
+
+#aaol {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+#zaom {
+    text-align: center;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+#class_letra_certa {
+    background-color: #62b160;
+}
+
+#class_letra_errada {
+    background-color: #f35e5e;
+}
